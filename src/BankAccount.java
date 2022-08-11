@@ -12,7 +12,7 @@ public class BankAccount {
             throw new LimitException("You don't have enough money on your balance in order to withdraw money " + sum );
         }else if (sum < amount) {
             this.amount = this.amount - sum;
-            System.out.println("Successful, you've just withdrawn your money "+ sum +"\nNow you have "+ amount );
+            System.out.println("Successful, you've just withdrawn your money "+ amount);
         }else {
             System.out.println("We've withdrawn your remaining amount " + amount);
             this.amount = 0;
